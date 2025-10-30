@@ -79,9 +79,22 @@ body {
         transform: translateY(-4px);
       }
 
-      h3 {
-        font-size: 1rem;
-        color: $text-light;
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        h3 {
+          font-size: 1rem;
+          color: $text-light;
+          margin: 0;
+        }
+
+        .header-icon {
+          width: 40px;
+          height: 40px;
+        }
       }
 
       .value {
@@ -92,6 +105,9 @@ body {
 
       .change {
         font-size: 0.85rem;
+        display: flex;
+        align-items: center;
+        gap: 4px;
 
         &.up {
           color: $success;
@@ -99,6 +115,11 @@ body {
 
         &.down {
           color: $error;
+        }
+
+        img {
+          width: 16px;
+          height: 16px;
         }
       }
     }
